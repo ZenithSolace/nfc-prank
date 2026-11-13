@@ -63,7 +63,7 @@
       message.textContent = "";
       audio.currentTime = 0;
       try {
-        await audio.play();
+        await audio.play(sound.mp3);
         message.textContent = "Surprise! You've been pranked!";
       } catch (error) {
         message.textContent = "Sound not found yet. Add your audio as sound.mp3 to the same folder.";
